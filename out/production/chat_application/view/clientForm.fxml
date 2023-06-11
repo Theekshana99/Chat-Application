@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="clientContext" prefHeight="548.0" prefWidth="817.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.clientController">
+   <children>
+      <JFXTextField fx:id="txtClientMessage" focusColor="BLACK" labelFloat="true" layoutX="70.0" layoutY="485.0" prefHeight="31.0" prefWidth="615.0" promptText="Type Massage" unFocusColor="#5dade2" />
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutX="697.0" layoutY="486.0" onMouseClicked="#sendImageAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/photograph.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="emoBtn" fitHeight="42.0" fitWidth="42.0" layoutX="14.0" layoutY="477.0" onMouseClicked="#SendEmojiAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/smile.png" />
+         </image></ImageView>
+      <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="760.0" layoutY="481.0" onMouseClicked="#sendOnMsgOnaction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/arrow.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="-1.0" prefHeight="51.0" prefWidth="817.0" style="-fx-background-color: #5DADE2;">
+         <children>
+            <Label fx:id="txtClientName" layoutX="56.0" layoutY="12.0" prefHeight="29.0" prefWidth="200.0" text="Client">
+               <font>
+                  <Font name="P052-Bold" size="18.0" />
+               </font></Label>
+            <ImageView fitHeight="51.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-male-user-100.png" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="CENTER" layoutX="603.0" layoutY="3.0" prefHeight="42.0" prefWidth="200.0" text="Blue Chat Pvt Ltd">
+               <font>
+                  <Font name="Tlwg Mono Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="34.0" layoutX="548.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/call.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutX="10.0" layoutY="73.0" prefHeight="354.0" prefWidth="711.0" style="-fx-border-color: black; -fx-background-color: white;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="13.0">
+         <content>
+            <HBox prefHeight="36.0" prefWidth="702.0">
+               <children>
+                  <VBox fx:id="vboxMessageFlow" prefHeight="36.0" prefWidth="738.0" />
+               </children>
+            </HBox>
+         </content>
+         <effect>
+            <Blend />
+         </effect>
+      </ScrollPane>
+      <AnchorPane fx:id="emojiContext" layoutX="29.0" layoutY="304.0" opacity="0.92" prefHeight="141.0" prefWidth="318.0" style="-fx-border-radius: 50%;">
+         <children>
+            <ImageView fx:id="emoji1" fitHeight="48.0" fitWidth="63.0" layoutX="21.0" layoutY="14.0" onMouseClicked="#allSendEmojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emoji3" fitHeight="48.0" fitWidth="63.0" layoutX="140.0" layoutY="14.0" onMouseClicked="#allSendEmojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji/3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emoji10" fitHeight="48.0" fitWidth="63.0" layoutX="253.0" layoutY="71.0" onMouseClicked="#allSendEmojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji/10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emoji6" fitHeight="48.0" fitWidth="63.0" layoutX="21.0" layoutY="71.0" onMouseClicked="#allSendEmojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji/6.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emoji2" fitHeight="48.0" fitWidth="63.0" layoutX="84.0" layoutY="14.0" onMouseClicked="#allSendEmojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji/2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emoji9" fitHeight="48.0" fitWidth="63.0" layoutX="196.0" layoutY="71.0" onMouseClicked="#allSendEmojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji/9.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emoji4" fitHeight="48.0" fitWidth="63.0" layoutX="196.0" layoutY="14.0" onMouseClicked="#allSendEmojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji/4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emoji5" fitHeight="48.0" fitWidth="63.0" layoutX="253.0" layoutY="14.0" onMouseClicked="#allSendEmojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji/5.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emoji7" fitHeight="48.0" fitWidth="63.0" layoutX="84.0" layoutY="71.0" onMouseClicked="#allSendEmojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji/7.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="emoji8" fitHeight="48.0" fitWidth="63.0" layoutX="140.0" layoutY="71.0" onMouseClicked="#allSendEmojiOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/emoji/8.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
